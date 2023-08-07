@@ -1,6 +1,6 @@
 package com.wgcodecompany.customer;
 
-//everySub
+//every SubModule already has lombok in it
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -16,7 +16,7 @@ import javax.persistence.*;
 public class Customer { //this class is the model for our microservice
 
     @Id
-    @SequenceGenerator(
+    @SequenceGenerator( // @Id will be based off of this
             name = "customer_id_sequence",
             sequenceName = "customer_id_sequence"
     )

@@ -12,6 +12,7 @@ public class FraudController {
 
     private final FraudCheckService fraudCheckService;
 
+//   The reason to remove the constructors is b/c you're using `lombok`
 //    public FraudController(FraudCheckService fraudCheckService) {
 //        this.fraudCheckService = fraudCheckService;
 //    }

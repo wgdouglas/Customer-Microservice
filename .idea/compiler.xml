@@ -11,5 +11,11 @@
         <module name="customer" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="notification" target="17" />
+      <module name="Notification" target="17" />
+      <module name="tracing" target="17" />
+      <module name="Tracing" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>

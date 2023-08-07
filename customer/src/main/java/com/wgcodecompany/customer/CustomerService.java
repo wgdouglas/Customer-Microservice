@@ -1,16 +1,16 @@
 package com.wgcodecompany.customer;
 
 import lombok.AllArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
-@Service
+@Service //this allows spring to initialize this as a Bean for us, so we can inject it in our controller
 @AllArgsConstructor
-public class CustomerService {
-    private final CustomerRepository customerRepository;
+public class CustomerService { //the service will handle the Post request
+    private final CustomerRepository customerRepository;//injecting it here is how & where we'll save the customer
     private final RestTemplate restTemplate;
     public void registerCustomer(CustomerRegistrationRequest request) {
+        //Here we'll turn the request into a Customer
         Customer customer = Customer.builder()
                 .firstName(request.firstName())
                 .lastName(request.lastName())
