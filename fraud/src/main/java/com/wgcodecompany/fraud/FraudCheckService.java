@@ -11,6 +11,7 @@ public class FraudCheckService {
 
     private final FraudCheckHistoryRepository fraudCheckHistoryRepository;
 
+//   The reason to remove the constructors is b/c you're using `lombok`
 //    public FraudCheckService(FraudCheckHistoryRepository fraudCheckHistoryRepository) {
 //        this.fraudCheckHistoryRepository = fraudCheckHistoryRepository;
 //    }
