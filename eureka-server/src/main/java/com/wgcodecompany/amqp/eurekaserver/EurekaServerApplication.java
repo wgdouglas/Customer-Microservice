@@ -1,4 +1,4 @@
-package org.wgcodecompany.eurekaserver;
+package com.wgcodecompany.amqp.eurekaserver;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

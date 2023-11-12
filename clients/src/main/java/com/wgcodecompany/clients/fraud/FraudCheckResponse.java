@@ -1,4 +1,4 @@
-package com.wgcodecompany.fraud;
+package com.wgcodecompany.clients.fraud;
 
 public record FraudCheckResponse(Boolean isFraudster){
 }
